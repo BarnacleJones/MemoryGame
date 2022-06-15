@@ -2,9 +2,8 @@ body {
   text-align: center;
   height: 100vh;
   background-image: url(./images/background.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-repeat:repeat-y;
+  background-size:cover;    
 }
 @font-face {
   font-family: 'texasranger.ttf';
@@ -15,9 +14,16 @@ body {
   src: url('./fonts/Texas-Ranger-Condensed/texasrangercond.ttf');
 }
 
+.App{
+ background-color: #EDECBF; 
+ height: 110vh;
+ opacity: 0.75;
+ display: inline-flex;
+ flex-direction: column;
+}
+
 .Card > img{
   width: 55%;
-  /* height: 75%; */
   border: 1px solid black;
 }
 
@@ -26,31 +32,41 @@ body {
 }
 
 .Card{  
-  width: 25%;
+  width: 25%; 
 }
 
 .CardScore{
   font-family: 'texasrangercond.ttf';
+  font-size: 1.5rem;
 }
 
 .CardArray{
-  /* width: 10%; */
   display: flex;  
-  /* margin: auto; */
   flex-direction: row;
-  /* flex-shrink: 1 1 1; */
   flex-wrap: wrap;
   align-items: center;
 }
 
 @media screen and (max-width: 824px) {
   .Card{
-    width: 45%;
+    width: 45%;    
   }
 
   .Card > img{
     width: 75%;
   }
 
+  .CardScore{
+    font-size: 1rem;
+  }
+
+  .scoreSpan{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  body {
+    background-repeat:repeat-x;
+    background-size:cover;    
+  }
   
 }
