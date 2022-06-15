@@ -1,4 +1,37 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
+.Card > img{
+  width: 55%;
+  /* height: 75%; */
+  border: 1px solid black;
+}
+
+.Card{
+  
+  width: 25%;
+}
+
+.CardArray{
+  /* width: 10%; */
+  display: flex;  
+  /* margin: auto; */
+  flex-direction: row;
+  /* flex-shrink: 1 1 1; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (max-width: 824px) {
+  .Card{
+    width: 45%;
+  }
+
+  .Card > img{
+    width: 75%;
+  }
+
+  
+}
