@@ -1,6 +1,13 @@
 # Memory Game
 
-Project from the Odin Project to practice react concepts, specifically function components and hooks.
+Project from the Odin Project to practice react concepts:
+
+    ReactJS
+    React Hook
+    State management
+    CSS
+    HTML
+
 
 https://www.theodinproject.com/lessons/node-path-javascript-memory-card
 
